@@ -12,7 +12,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -22,6 +22,9 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	:root {
+		--primary: #d41457;
+    	--yellow: #fff20f;
+
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
@@ -33,4 +36,69 @@ const { title } = Astro.props;
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
+
+	@font-face {
+		font-family: 'Inter';
+		src: url('/fonts/Inter/Inter-Thin.ttf');
+		font-family: 100;
+	}
+
+
+	@font-face {
+		font-family: 'Inter';
+		src: url('/fonts/Inter/Inter-ExtraLight.ttf');
+		font-family: 200;
+	}
+
+
+	@font-face {
+		font-family: 'Inter';
+		src: url('/fonts/Inter/Inter-Light.ttf');
+		font-family: 300;
+	}
+
+
+	@font-face {
+		font-family: 'Inter';
+		src: url('/fonts/Inter/Inter-Medium.ttf');
+		font-family: 400;
+	}
+
+	@font-face {
+		font-family: 'Inter';
+		src: url('/fonts/Inter/Inter-Regular.ttf');
+		font-family: 500;
+	}
+
+	@font-face {
+		font-family: 'Inter';
+		src: url('/fonts/Inter/Inter-SemiBold.ttf');
+		font-family: 600;
+	}
+
+	@font-face {
+		font-family: 'Work-Sans';
+		src: url('/fonts/WorkSans/WorkSans-Light.ttf');
+		font-family: 300;
+	}
+
+
+	@font-face {
+		font-family: 'Work-Sans';
+		src: url('/fonts/WorkSans/WorkSans-Medium.ttf');
+		font-family: 400;
+	}
+
+	@font-face {
+		font-family: 'Work-Sans';
+		src: url('/fonts/WorkSans/WorkSans-Regular.ttf');
+		font-family: 500;
+	}
+
+	@font-face {
+		font-family: 'Work-Sans';
+		src: url('/fonts/WorkSans/WorkSans-SemiBold.ttf');
+		font-family: 600;
+	}
+
 </style>
